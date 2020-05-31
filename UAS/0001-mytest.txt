@@ -1,0 +1,26 @@
+Script started on Mon 01 Jun 2020 01:40:35 AM WIB
+muhammad.alfi81@badak:~$ PS1="$ "
+$ echo $GitHubUser
+alfisyk
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200601-014101-2493-muhammad.alfi81/>
+$ PS1="\$(eval \$PSTAMP)"
+200601-014110-9e15-muhammad.alfi81/> date
+Mon Jun  1 01:41:12 WIB 2020
+200601-014112-e9b9-muhammad.alfi81/> gpg --list-keys
+/home/fasilkom/mahasiswa/m/muhammad.alfi81/.gnupg/pubring.gpg
+-------------------------------------------------------------
+pub   4096R/67DF6DDE 2020-02-13 [expires: 2021-02-12]
+uid                  Operating Systems (OS) <operatingsystems@vlsm.org>
+sub   4096R/44170902 2020-02-13 [expires: 2021-02-12]
+
+pub   4096R/A60EA7D1 2020-05-31
+uid                  Muhammad Alfi Syakir <syakier15@gmail.com>
+sub   4096R/8B77CFB3 2020-05-31
+
+200601-014119-f2bf-muhammad.alfi81/> exit
+exit
+
+Script done on Mon 01 Jun 2020 01:41:23 AM WIB
